@@ -1,0 +1,25 @@
+# Secrets & Environment (AGENTS.md Hard Rule: No secrets in git)
+.env
+.env.*
+!.env.example
+
+# Local Workspace Junctions (linked from workspace/ submodule via scripts/sync-workspace.ps1)
+/docs
+/contracts
+/tasks
+/.agents/
+/.claude/
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Node / Vite / Playwright Build & Test Artifacts
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
